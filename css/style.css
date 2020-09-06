@@ -117,6 +117,48 @@ body {
   border: 0px;
 }
 
+
+/* modals */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.mobile-menu-container {
+  background: var(--c-light);
+}
+
+.mobile-menu-container {
+  height: 100%;
+  width: 100%;
+  
+
+}
+
+.mobile-menu-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-grey);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 35px;
+
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+
+}
 /*  FRONT PAGE */
 .front-page {
   width: 100%;
