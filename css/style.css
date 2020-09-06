@@ -64,6 +64,9 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-main);
 }
@@ -125,14 +128,31 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+
 }
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all; 
+}
+
 
 .modal-mobile-menu {
   background: var(--c-light);
+  
+}
+
+.modal-mobile-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100%;
 }
+
 .mobile-menu-container {
   margin: 0;
   height: 70%;
@@ -146,10 +166,14 @@ body {
   top: 16px;
   right: 16px;
   cursor: pointer;
-} 
-.mobile-menu-close-btn {
-
 }
+
+.mobile-menu-close-btn {
+  background: var(--c-accent);
+  color: var(--c-light);
+  padding: 10px 14px;
+}
+
 .mobile-menu-item {
   font-style: normal;
   font-weight: bold;
