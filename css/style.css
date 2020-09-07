@@ -141,7 +141,6 @@ body {
 .modal-active {
   opacity: 1;
   pointer-events: all;
-  
 }
 
 .body-scroll-disable {
@@ -151,7 +150,6 @@ body {
 /* modal menu */
 .modal-mobile-menu {
   background: var(--c-light);
-  
 }
 
 .modal-mobile-content {
@@ -244,11 +242,32 @@ body {
 }
 
 /* request */
-.request-menu-close-btn {
-  background: var(--c-light);
-  color: var(--c-grey);
-  padding: 25px 25px;
-  font-size: 25px 25px;
+.request-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+}
+
+.request-received {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-dark);
+}
+
+.request-contact-you {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--txt-c-dark);
 }
 
 /*  FRONT PAGE */
@@ -845,5 +864,3 @@ body {
   margin: 0;
   padding-left: 8px;
 }
-
-
