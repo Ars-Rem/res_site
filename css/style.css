@@ -297,22 +297,30 @@ body {
 
 .project-modal-container {
   background: var(--c-light);
-  padding: 45px 25px;
+  padding: 45px 0px;
   text-align: left;
-  display: flex;
+  
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
+  height: 85%;
+  
 }
 
+.project-modal-scrollable {
+  overflow-y: auto; 
+  height: 100%;
+  padding: 0 25px;
+}
 .modal-project {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  
 }
 
 .project-modal-title {
@@ -322,10 +330,16 @@ body {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--txt-c-dark);
-  margin: 25px 0;
   text-decoration: none;
+  margin-bottom: 0 0 25px 0;
+  display: block;
 }
 
+.project-modal-img {
+  width: 100%;
+  margin-bottom: 30px;
+
+}
 .pp-modal-text{
   font-size: 17px;
   line-height: 25px;
@@ -630,6 +644,12 @@ body {
   padding-bottom: 0px;
 }
 
+.team-projects {
+  position: relative;
+  overflow: hidden;
+}
+
+
 .team-projects-title {
   color: var(--txt-c-dark);
   position: relative;
@@ -652,8 +672,8 @@ body {
   text-transform: uppercase;
   color: var(--txt-c-grey-light);
   z-index: -1;
-  top: -50px;
-  left: 50px;
+  top: 17px;
+  left: 80px;
 }
 
 .team-projects-item {
