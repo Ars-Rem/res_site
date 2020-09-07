@@ -28,8 +28,8 @@
             <nav class="navigation">
                 <a href="" class="logo-link"><img src="img/goit-logo.svg" alt="GOIT logo"></a>
                 <div class="navigation-part">
-                    <a href="" class="hire-me-btn"> — HIRE ME </a>
-                    <a href="" class="mobile-menu"><i class="fas fa-bars"></i></a>
+                    <a href="" class="hire-me-btn" id="hire-me-btn"> — HIRE ME </a>
+                    <a href="" class="mobile-menu" id="mobile-menu-btn"><i class="fas fa-bars"></i></a>
                 </div>
             </nav>
 
@@ -54,7 +54,7 @@
 
             <p class="front-page-my-decr-btn">About me in 2 minutes</p>
 
-            <button class="front-page-my-video-btn">
+            <button class="front-page-my-video-btn" id="my-video-btn">
                 <i class="fas fa-play"></i>
                 PLAY
 
@@ -393,13 +393,12 @@
             </div>
         </div>
     </section>
-    <script src="js/choices.min.js"></script>
-    <script src="js/calculator.js"></script>
+    
 
     <!-- modals -->
     <div class="modals-wrapper"></div>
     <!-- mobil menu -->
-        <div class="modal modal-mobile-menu">
+        <div class="modal modal-mobile-menu" id="mobile-menu">
             <div class="modal-mobile-content">
                 <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
                 <div class="container mobile-menu-container">
@@ -416,7 +415,26 @@
                 </div>
             </div>
         </div>
-
+    
+        <div class="modal modal-area-bgd" id="my-video-modal">
+             
+            <div class="my-video-container">
+                <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+                <video class="my-video-content modal-area-content" src="video.mp4" controls></video>
+            </div>
+        </div>
+        
+        <div class="modal modal-area-bgd" id="my-video-modal">
+             
+            <div class="my-video-container">
+                <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+                
+            </div>
+        </div>
+      
+    <script src="js/choices.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/modals.js"></script>
 </body>
 
 </html>

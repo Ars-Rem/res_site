@@ -16,6 +16,9 @@
   --txt-c-accent: var(--c-accent);
   --txt-c-light: var(--c-light);
 
+  /* modals */
+  --modal-dark: rgb(20 29 45 / 0.8);
+
   /* font */
   --font-main: "Acrom", sans-serif;
 
@@ -132,15 +135,20 @@ body {
   transition: all 1.3s ease-in-out;
   pointer-events: none;
   display: block;
-
+  background: var(--modal-dark);
 }
 
 .modal-active {
   opacity: 1;
-  pointer-events: all; 
+  pointer-events: all;
+  
 }
 
+.body-scroll-disable {
+  overflow: hidden;
+}
 
+/* modal menu */
 .modal-mobile-menu {
   background: var(--c-light);
   
@@ -215,6 +223,34 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* my video */
+.my-video-content {
+  width: 100%;
+}
+
+.my-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.my-video-close-btn {
+  background: var(--c-light);
+  color: var(--c-dark);
+  padding: 10px 14px;
+}
+
+/* request */
+.request-menu-close-btn {
+  background: var(--c-light);
+  color: var(--c-grey);
+  padding: 25px 25px;
+  font-size: 25px 25px;
+}
+
 /*  FRONT PAGE */
 .front-page {
   width: 100%;
@@ -809,3 +845,5 @@ body {
   margin: 0;
   padding-left: 8px;
 }
+
+
