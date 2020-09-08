@@ -159,7 +159,7 @@ body {
   justify-content: flex-end;
   height: 100%;
   text-align: center;
-  padding: 18px;
+  padding: 0px;
 }
 
 .mobile-menu-container {
@@ -207,6 +207,7 @@ body {
   text-align: center;
   color: var(--txt-c-dark);
   text-align: center;
+  margin-top: 280px;
 }
 
 .mobile-menu-futer-mail {
