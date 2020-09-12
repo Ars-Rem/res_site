@@ -125,13 +125,13 @@ body {
 }
 
 .container-down {
-  width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   margin: auto;
-  padding: 30px 10px 0px 10px;
+  padding: 30px 10px 20px 10px;
   border: 0px;
 }
 
@@ -210,6 +210,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .mobile-menu-futer-phone {
   font-style: normal;
   font-weight: bold;
@@ -647,6 +648,7 @@ body {
 
 .personal-projects-item {
   border-bottom: 1px solid var(--c-grey-blue);
+  margin-bottom: 30px;
 }
 
 /* TEAM PROJECTS */
@@ -765,6 +767,7 @@ body {
   text-transform: uppercase;
   margin: 0 0 30px 0;
   color: var(--txt-c-light);
+  width: 276px;
 }
 
 .calculator-descr span {
@@ -852,6 +855,12 @@ body {
 }
 
 /* futer */
+
+.futer-info,
+.futer-contacts {
+  display: flex;
+  flex-direction: column;
+}
 
 .futer {
   margin-bottom: 0px;
@@ -1024,38 +1033,172 @@ body {
     margin-bottom: 90px;
   }
 
-  .about {
+  /* I code things from scratch_ */
+  .about .container {
     position: relative;
-  }
-
-  .about-img-text {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .about-title {
-    font-size: 50px;
-    line-height: 60px;
-    width: 600px;
   }
 
   .about-descr {
     font-size: 36px;
     line-height: 43px;
   }
-  
 
+  /* /I code things from scratch_ */
 
+  .team-projects-title,
+  .personal-projects-title {
+    width: 400px;
+    text-align: left;
+    font-size: 50px;
+    line-height: 60px;
+  }
 
+  .personal-projects .container-down,
+  .team-projects .container-down {
+    align-items: normal;
+  }
 
+  .callback-form .container-down {
+    align-items: normal;
+    margin-bottom: 45px;
+  }
+  .team-projects-item,
+  .personal-projects-item {
+    margin: 0 25px 40px 25px;
+  }
 
-.personal-projects.container-down {
-  align-self: normal;
-}
+  .team-projects-title-bkg {
+    font-size: 200px;
+    line-height: 240px;
+    top: 19px;
+  }
 
+  .callback-form-container {
+    padding: 75px 30px 70px 30px;
+  }
+  .callback-form-title {
+    font-size: 36px;
+    line-height: 43px;
+    width: 386px;
+  }
 
+  .callback-form-input,
+  .callback-deskr {
+    width: 356px;
+    box-sizing: border-box;
+  }
 
+  .callback-form-submit {
+    margin-top: 10px;
+  }
 
+  /* calculator */
 
+  .calculator-title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 605px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
 
+  .calculator .container-down {
+    align-items: normal;
+    position: relative;
+    padding: 20px 10px 90px 10px;
+  }
+
+  .calculator-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    font-size: 36px;
+    line-height: 150%;
+  }
+
+  .calculator-icon {
+    position: absolute;
+    right: 10px;
+    top: 404px;
+    width: 344px;
+    z-index: 1;
+  }
+
+  .calculator-text {
+    text-align: left;
+    width: 330px;
+    margin-top: 10px;
+  }
+  .calculator-form {
+    z-index: 2;
+    padding: 60px 80px 70px 80px;
+  }
+
+  .callback-form-title {
+    line-height: 150%;
+  }
+
+  /* tablet futer  */
+
+  .futer .container {
+    align-items: flex-start;
+  }
+
+  .futer-main-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .futer-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--txt-c-dark);
+    margin: 0px 30px 0 0px;
+  }
+
+  .futer-prof {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--c-dark-blue);
+    margin: 0 0px 20px 0px;
+  }
+
+  .futer-phone {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-dark);
+    margin: 0px 0px 15px 30px;
+  }
+
+  .futer-mail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-dark);
+    margin: 0px 0px 30px 30px;
+  }
+  .icon {
+    color: var(--c-dark-blue);
+    padding-left: 0;
+    font-size: 25px;
+  }
+
+  .foter-social .social {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
 }
