@@ -27,7 +27,7 @@
   --mobile: calc(300px + var(--vertical-scroll));
   --tablet: calc(640px + var(--vertical-scroll));
   --desktop: calc(900px + var(--vertical-scroll));
-  --desktop-lg: calc(1146px + var(--vertical-scroll));
+  --desktop-lg: calc(1270px + var(--vertical-scroll));
 
   /* animation */
   --animation-fast: 0.1s;
@@ -77,13 +77,14 @@ body {
 /* COMMON */
 
 .mobile-element {
+  display: block;
 }
 
 .tablet-element {
   display: none;
 }
 
-.dektop-element {
+.desktop-element {
   display: none;
 }
 
@@ -362,7 +363,7 @@ body {
 /*  FRONT PAGE */
 
 .front-page-wrapper {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,6 +374,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .front-page {
   width: 100%;
   background-color: var(--c-dark);
@@ -757,6 +759,11 @@ body {
   margin-bottom: 30px;
 }
 
+.callback-form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-error-border {
   border: 1px solid red;
 }
@@ -998,6 +1005,14 @@ body {
     display: block;
   }
 
+  .desktop-element {
+    display: none;
+  }
+
+  .front-page-main-info {
+    width: 423px;
+  }
+
   .front-page-my-name {
     font-size: 36px;
     line-height: 43px;
@@ -1009,6 +1024,7 @@ body {
     margin-bottom: 30px;
     font-size: 55px;
     line-height: 66px;
+    z-index: 2;
   }
 
   .profession-part-1 {
@@ -1023,21 +1039,31 @@ body {
     line-height: 150%;
     width: 385px;
     margin: 0 0 40px 0;
+    z-index: 2;
   }
+
   .front-page-my-info {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    width: 240px;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
   }
 
   .front-page-gallery-my-photo {
     width: 140px;
     margin-right: 35px;
     margin-bottom: 0;
+    position: absolute;
   }
+
   .front-page-my-video-btn {
     margin-bottom: 0;
   }
+
   .front-page-my-decr-btn {
     text-align: left;
   }
@@ -1218,14 +1244,28 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
-  .dektop-element {
+  .container {
+    max-width: var(--desktop-lg);
+    width: 100%;
+  }
+
+  .mobile-element {
     display: none;
+  }
+
+  .tablet-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: block;
   }
   .front-page-profession {
     font-size: 70px;
     line-height: 84px;
     width: 510px;
     margin-left: -60px;
+    margin-bottom: 35px;
   }
 
   .experience-wrapper {
@@ -1235,6 +1275,8 @@ body {
   .front-page-main-info {
     align-items: flex-start;
     order: 2;
+    margin-top: -40px;
+    z-index: 2;
   }
 
   .front-page-my-info {
@@ -1243,11 +1285,14 @@ body {
 
   .front-page-description {
     text-align: left;
+    margin-bottom: 86px;
   }
 
   .front-page-gallery-btn {
-    width: 387px;
+    width: 385px;
     text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 90px;
   }
 
   .profession-part-2 {
@@ -1257,11 +1302,102 @@ body {
   .front-page-wrapper {
     position: relative;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
   }
 
   .front-page-laptop {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -42px;
+    right: -8px;
+    z-index: 1;
+  }
+
+  .front-page-my-decr-btn {
+    text-align: right;
+  }
+
+  .experience-skill {
+    margin-left: -33px;
+  }
+  .experience-title {
+    text-align: left;
+  }
+
+  /* gallery desktop*/
+
+  .personal-projects-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-projects-item,
+  .personal-projects-item {
+    width: calc(50% - 20px);
+  }
+
+  .team-projects-item:nth-child(odd),
+  .personal-projects-item:nth-child(odd) {
+    margin: 0 20px 40px 0px;
+  }
+
+  .team-projects-item:nth-child(even),
+  .personal-projects-item:nth-child(even) {
+    margin: 0 0px 40px 20px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    width: 530px;
+    font-size: 70px;
+    line-height: 84px;
+  }
+
+  .team-projects-title-bkg {
+    font-size: 250px;
+    line-height: 300px;
+    top: 29px;
+    left: 278px;
+  }
+
+  .front-page-gallery-my-photo {
+    width: 140px;
+    margin-right: 35px;
+    margin-bottom: 0;
+    position: absolute;
+    width: 256px;
+    right: 333px;
+    top: -84px;
+  }
+
+  .front-page-my-name {
+    z-index: 2;
+  }
+
+  /* scratch */
+
+  .about-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 620px;
+  }
+
+  .about-text {
+    width: 406px;
+  }
+
+  .about-text:last-child {
+    width: 388px;
+  }
+
+  .callback-form-input-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .callback-form-input {
+    width: 30%;
+    margin-right: 40px;
   }
 }
