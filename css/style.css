@@ -99,6 +99,7 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -359,6 +360,19 @@ body {
   margin: 0 0 30px 0;
 }
 /*  FRONT PAGE */
+
+.front-page-wrapper {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .front-page {
   width: 100%;
   background-color: var(--c-dark);
@@ -1200,5 +1214,54 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .dektop-element {
+    display: none;
+  }
+  .front-page-profession {
+    font-size: 70px;
+    line-height: 84px;
+    width: 510px;
+    margin-left: -60px;
+  }
+
+  .experience-wrapper {
+    order: 1;
+  }
+
+  .front-page-main-info {
+    align-items: flex-start;
+    order: 2;
+  }
+
+  .front-page-my-info {
+    order: 3;
+  }
+
+  .front-page-description {
+    text-align: left;
+  }
+
+  .front-page-gallery-btn {
+    width: 387px;
+    text-align: center;
+  }
+
+  .profession-part-2 {
+    margin-left: 60px;
+  }
+
+  .front-page-wrapper {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .front-page-laptop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
