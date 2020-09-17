@@ -1571,21 +1571,11 @@ body {
   }
 
   .about-img-container {
-    width: 421px;
-    height: 455px;
+    width: 669px;
+    height: 254px;
     position: absolute;
     left: 320px;
     top: 82px;
     display: flex;
-  }
-
-  .about-img-text {
-    font-weight: bold;
-    font-size: 250px;
-    line-height: 300px;
-    text-transform: uppercase;
-    color: var(--txt-c-grey-light);
-    writing-mode: tb-rl;
-    margin: auto;
   }
 }
