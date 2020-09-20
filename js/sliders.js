@@ -1,7 +1,7 @@
 var mySwiper = new Swiper('.swiper-container', {
   
    speed: 1000,
-   effect: slide,
+  //  effect: slide,
    grabCursor: true,
   // If we need pagination
   pagination: {
