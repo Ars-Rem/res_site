@@ -500,6 +500,7 @@ body {
   margin-bottom: 35px;
   cursor: pointer;
   transition: var(--animation-transition);
+  margin-left: 34px;
 }
 
 .front-page-my-video-btn:hover {
@@ -1722,5 +1723,5 @@ body {
     height: 455px;
     left: 24px;
   }
-  /* test */
+ 
 }
