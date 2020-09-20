@@ -1067,7 +1067,12 @@ body {
     right: 0;
     top: 0;
   }
-
+ 
+  .about-text {
+    font-size: 17px;
+    line-height: 150%;
+  }
+  
   .about-text:last-child {
     width: 320px;
     margin-bottom: 84px;
@@ -1108,10 +1113,7 @@ body {
     z-index: 2;
   }
 
-  .about-text {
-    font-size: 17px;
-    line-height: 150%;
-  }
+  
 
   .profession-part-1 {
     margin-right: 40px;
